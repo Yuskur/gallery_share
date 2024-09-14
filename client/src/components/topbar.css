@@ -1,0 +1,42 @@
+.top-bar{
+    flex: 1;
+    flex-direction: row;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: .01rem solid black;
+    z-index: 10;
+    background-color: white;
+}
+
+.logo{
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.navbar{
+    padding-right: 1.5rem;
+}
+
+.navbar-links{
+    color: black;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.navbar-links:hover{
+    color: #333333;
+}

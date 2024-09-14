@@ -1,0 +1,78 @@
+.signup-body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-inner{
+    position: relative;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.close-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem;
+    cursor: pointer;
+}
+
+.signup-sign{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.textBox{
+    width: 20rem;
+    margin: 1rem;
+}
+.textBox input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+    border-color: #000000; 
+}
+.password-eye{
+    cursor: pointer;
+}
+.password-body{
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.check-box{
+    font-size: .85rem;
+    background-color: white;
+}
+.check-box .form-check-input{
+    cursor: pointer;
+}
+.check-box .form-check-input:checked{
+    background-color: black;
+    border-color: white;
+}
+
+.submitButton-signup{
+    margin: 1rem;
+    color: white;
+    background-color: black;
+    border-color: #000000;
+}
+
+.submitButton-signup:hover{
+    background-color: #323030;
+}
