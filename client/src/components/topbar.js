@@ -11,15 +11,12 @@ function Topbar(){
         <div className='logo-container'>
             <p className='logo'>Gallery Share</p>
         </div>
-        <Nav className='navbar'fill variant='underline' activeKey={location.pathname}>
+        <Nav className='navbar' fill variant='underline' activeKey={location.pathname}>
           <Nav.Item>
-            <Nav.Link className='navbar-links' as={Link} to='/' href='/'>About</Nav.Link>
+            <Nav.Link className='navbar-links' as={Link} to='/' href='/'>About us</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link className='navbar-links' as={Link} to='/login' eventKey={'/login'}>Login</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className='navbar-links' as={Link} to='/' eventKey={'/signup'}>Discover</Nav.Link>
           </Nav.Item>
         </Nav>
       </div>

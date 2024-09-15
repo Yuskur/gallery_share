@@ -15,7 +15,7 @@ function AppWraper() {
   return (
     <div className='app'>
       <div className='topbar'>
-        <Topbar className='topbar'/>
+        <Topbar/>
       </div>
       <div className='content'>
         <Routes>

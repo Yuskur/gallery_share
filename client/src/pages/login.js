@@ -21,14 +21,14 @@ function Login() {
     return(
         <div className="login-body">
             <div className="half-display">
-                <img className="login-stock" src="/images-stock/split-face.jpeg" alt="vintage car portrait"/>
+                <img className="login-stock" src="/images-stock/split_face.png" alt="vintage car portrait"/>
             </div>
             <div className="authLogin-body">
                 <div>
                     <p className="login-sign">Login</p>
                 </div>
                 <Form>
-                    <Form.Group className="textBox" controlId="formBasicEmail">
+                    <Form.Group className="textBox">
                         <Form.Control type="email" placeholder="Enter email . . ." autoComplete="email" name="email" id="email"/>
                         <Form.Text className="email-assurance">
                             We'll never share your email with anyone else

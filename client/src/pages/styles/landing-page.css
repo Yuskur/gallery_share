@@ -1,0 +1,74 @@
+.landingPage-body{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+}
+
+.landingPage-content{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    margin-top: 4rem;
+}
+
+.intro-slides.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.introduction-slides{
+    width: 60rem;
+}
+
+.d-block.w-100{
+    height: 35rem;
+}
+
+.topBar{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    flex-direction: row;
+    z-index: 9;
+    display: flex;
+    border-bottom: .1rem solid #ebebeb;
+    background-color: white;
+}
+.nav-bar{
+    width: 20rem;
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 1rem;
+    margin-left: 18rem;
+}
+
+.nav-bar-text{
+    margin-right: 3rem;
+    margin-left: 3rem;
+    font-weight: 800;
+    color: rgb(81, 77, 77);
+    cursor: pointer;
+}
+
+.nav-bar-text:hover{
+    color: black;
+}
+
+.city-night{
+    width: 50rem;
+}
+.city-night-body{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+.search-body-l{
+    align-self: center;
+    margin-right: .5rem;
+}

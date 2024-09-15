@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-bottom: .01rem solid black;
+    border-bottom: .01rem solid #323030;
     z-index: 10;
     background-color: white;
 }

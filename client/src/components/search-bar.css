@@ -1,0 +1,36 @@
+.search-box {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    box-shadow: none;
+  }
+  
+  .search-body {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    border: .1rem solid rgb(232, 232, 232);
+    padding: .1rem;
+    width: 20rem;
+    justify-content: space-between;
+  }
+
+  .search-body input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .search-body .search-box:focus {
+    border: none;
+    box-shadow: none;
+  }
+
+  .search-icon{
+    margin-right: 1rem;
+    justify-self: flex-end;
+  }
