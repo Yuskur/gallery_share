@@ -1,0 +1,56 @@
+.profile-page-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem 0 10rem;
+}
+
+/* top profile section */
+.top-section-profile{
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    padding: 10rem 10rem 10rem 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image-container{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0 10rem 0 0;
+    border: .01rem solid black;
+    cursor: pointer;
+}
+
+.profile-image{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+/* profile description section */
+.profile-description{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 10rem;
+    padding: 1rem;
+    border: .01rem solid black;
+}
+
+/* bottom profile section */
+.bottom-section-profile{
+    flex-direction: column;
+}
+
+/* plus photo item */
+
+.add-photo{
+    bottom: 1.5rem;
+    right: 1.5rem;
+    position: fixed;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+}

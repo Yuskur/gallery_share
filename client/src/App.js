@@ -19,7 +19,7 @@ function AppWraper() {
       </div>
       <div className='content'>
         <Routes>
-          <Route path='/' element={<Landing/>}/>
+          <Route path='/' element={<Profile/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/profile' element={<Profile />}/>
           <Route path='/login' element={<Login />}/>

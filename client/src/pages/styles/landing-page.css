@@ -42,7 +42,6 @@
     justify-content: center;
     align-content: center;
     padding-top: 1rem;
-    margin-left: 18rem;
 }
 
 .nav-bar-text{
@@ -57,18 +56,69 @@
     color: black;
 }
 
+.search-body-l{
+    top: .5rem;
+    right: 0;
+    position: absolute;
+    align-self: center;
+    margin-right: .5rem;
+}
+
 .city-night{
     width: 50rem;
 }
 .city-night-body{
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     align-items: flex-start;
     margin-top: 10rem;
     margin-left: 10rem;
+    margin-right: 10rem;
+}
+.city-night-info-body{
+    flex: 1;
+    width: 40rem;
+    align-self: stretch;
+    margin: 1rem;
+    background-color: white;
+    border: .001rem solid black;
 }
 
-.search-body-l{
-    align-self: center;
-    margin-right: .5rem;
+.byp{
+    flex-direction: column;
+    display: flex;
+    height: 15rem;
+    padding: 1.5rem;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(237, 249, 255);
+}
+
+.byp-title{
+    
+}
+
+.byp-title-text{
+    text-decoration: underline;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.byp-p-body{
+    width: 55rem;
+    margin-bottom: 1rem;
+}
+
+.byp-p{
+    text-align: center;
+}
+
+/*footer*/
+.footer{
+    margin-top: 5rem;
+    height: 15rem;
+    background-color: #f9f4f4;
 }

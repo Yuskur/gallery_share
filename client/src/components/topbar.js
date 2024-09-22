@@ -13,6 +13,9 @@ function Topbar(){
         </div>
         <Nav className='navbar' fill variant='underline' activeKey={location.pathname}>
           <Nav.Item>
+            <Nav.Link className='navbar-links' as={Link} to='/home' eventKey={'/home'}>Home</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
             <Nav.Link className='navbar-links' as={Link} to='/' href='/'>About us</Nav.Link>
           </Nav.Item>
           <Nav.Item>

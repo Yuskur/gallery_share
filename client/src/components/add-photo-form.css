@@ -1,0 +1,213 @@
+/* Outmost container */
+.add-photo-form-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form content */
+.photo-form{
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+    background-color: white;
+}
+
+/* title */
+
+.add-photo-title{
+    font-weight: 700;
+    font-size: 1.2rem;
+    align-self: center;
+}
+
+/* photo form container */
+.photo-form-content{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    height: 40rem;
+    padding: 3rem 5rem 5rem 5rem;
+    overflow-y: scroll;
+    border: .01rem solid black;
+}
+
+.photo-updload{
+    display: flex;
+    flex-direction: row;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 .5rem;
+    border: .01rem solid black;
+}
+
+.preview-photo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    padding: 1rem;
+}
+
+.preview-photo {
+    width: 15rem;
+    margin: auto;
+}
+
+.trash-photo {
+    width: 1.2rem;
+    height: 1.2rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.preview{
+    padding: .1rem 1rem .1rem 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.preview:hover{
+    background-color: #323030;
+    color: white;
+}
+
+.photo-upload-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upload-icon{
+    width: 1rem;
+    height: 1rem;
+    margin: 0 1rem 1rem .5rem;
+    cursor: pointer;
+}
+
+/* Photo description */
+.description-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    height: 10rem;
+}
+
+.description-box{
+    height: 9rem;
+    line-height: 1.5;
+    padding: 1rem;
+    resize: none;
+    outline: none; 
+    box-shadow: none;
+    border: .01rem solid black;
+}
+
+/* Tags section */
+.tags-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 0;
+}
+
+.tags-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tags-box{
+    height: 3.5rem;
+    line-height: 1.5;
+    padding: 1rem;
+    resize: none;
+    outline: none; 
+    box-shadow: none;
+    border: .01rem solid black;
+}
+
+#tag{
+    position: relative;
+    margin: 1rem 0 1rem 1rem;
+}
+
+/* Settings Section */
+.settings{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 0 0;
+}
+
+.commenting-setting .form-check-input {
+    background-color: #f0f0f0;
+    border-color: #ced4da; 
+    height: 1.5rem;
+    width: 3rem;
+    margin: 0 1rem 0 0;
+    cursor: pointer;
+}
+
+.commenting-setting .form-check-input:checked{
+    background-color: black;
+    border-color: black;
+}
+
+
+/* Words styling */
+.words{
+    display: flex;
+    font-size: .8rem;
+    align-self: flex-end;
+    flex-direction: row;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.max-words-hit{
+    color: red;
+    margin-right: .5rem;
+
+}
+
+#tags-statement{
+    width: 15rem;
+    margin: 1rem 0 0 0;
+    padding: .5rem;
+    align-self: center;
+    border: .01rem solid black;
+}
+
+/* post photo */
+.post-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 1.5rem 1.5rem 0;
+    padding: .1rem 1rem .1rem 1rem;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.post-btn:hover{
+    background-color: #323030;
+    color: white;
+}
+
+/* close button */
+.close-photo-form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    margin: 1.5rem;
+}

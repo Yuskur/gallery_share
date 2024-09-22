@@ -60,10 +60,28 @@ function Landing() {
                         </Carousel.Item>
                     </Carousel>
                 </div>
+                <div className="byp">
+                    <div className="byp-title">
+                        <h1 className="byp-title-text">Build Your Portfolio Today</h1>
+                    </div>
+                    <div className="byp-p-body">
+                        <p className="byp-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                         laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
                 <div className="city-night-body">
                     <img className="city-night" src="./images-stock/city_night.png" alt="city night"/>
+                    <div className="city-night-info-body">
+                        
+                    </div>
                 </div>
             </div>
+            <footer className="footer">
+                <div>
+                    
+                </div>
+            </footer>
         </div>
     );
 }
