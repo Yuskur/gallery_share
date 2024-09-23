@@ -14,6 +14,8 @@ function AddPhotoForm(props) {
     const [tag, setTag] = useState("");
     const [photo, setPhoto] = useState(null);
 
+    const [tags, setTags] = useState([]);
+
     const [isEnabledCommenting, setIsEnabledCommenting] = useState(true);
 
     const handleFileChange = (event) => {
@@ -31,7 +33,41 @@ function AddPhotoForm(props) {
 
     const trashPhoto = () => {
         setPhoto(null);
-        setFilename("")
+        setFilename("");
+    }
+
+    const handleTagAdd = () => {
+        const tagsToAdd = tag.split(' ');
+        setTags([...tags, ...tagsToAdd]);
+        setTag("");
+        console.log(tags);
+    }
+
+    const handleRemoveTag = (itemToRemove) => {
+        setTags(tags.filter((item) => item != itemToRemove));
+    }
+
+    const handleTagsEnter = (event) => {
+        if(event.key === 'Enter'){
+            if(tag != "") handleTagAdd();
+        }
+    }
+
+    const handleKeyDown = (event) => {
+        if(event.key === 'Enter'){
+            event.preventDefault();
+        }
+    }
+
+    function TagObj({tag}) {
+        return(
+            <div className="tag-obj-container">
+                <p className="tag-obj">
+                    #{tag}
+                    <CloseButton id="tag-delete" className="close-photo-form" onClick={() => handleRemoveTag(tag)}/>
+                </p>
+            </div>
+        );
     }
 
 
@@ -87,6 +123,13 @@ function AddPhotoForm(props) {
                         </p>
                     </div>
                     <div className="tags-container">
+                        {tags.length != 0 && (
+                            <div className="tags-preview">
+                                {tags.map((item, index) => (
+                                    <TagObj key={index} tag={item} />
+                                ))}
+                            </div>
+                        )}
                         <form className="tags-body">
                             <textarea 
                                 className="tags-box"
@@ -95,10 +138,13 @@ function AddPhotoForm(props) {
                                 onChange={(change) => {
                                     setTag(change.target.value);
                                 }}
+                                onKeyUp={handleTagsEnter}
+                                onKeyDown={handleKeyDown}
                                 placeholder="Enter Tag"
                             />
-                            <p id="tag" className="post-btn">Add Tag</p>
+                            <p id="tag" className="post-btn" onClick={handleTagAdd}>Add Tag</p>
                         </form>
+                        <p id="tags-count" className="words">* Tags separated by space *</p>
                         <p id="tags-statement" className="words">Your tags help us push your content out to more people so think carefully</p>
                     </div>
                     <div className="settings">

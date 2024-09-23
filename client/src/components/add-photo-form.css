@@ -110,10 +110,40 @@
 }
 
 /* Tags section */
+.tags-preview{
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem 0 1rem;
+    height: 4rem;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    border: .01rem solid black;
+    overflow-x: scroll;
+}
+
+.tag-obj{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: .5rem;
+    font-weight: 700;
+    font-size: .8rem;
+    margin: 0 .5rem 0 .5rem;
+    padding: 1rem .5rem 1rem 1rem;
+    background-color: #f6f4f4;
+}
+
+#tag-delete{
+    position: relative;
+    width: .3rem;
+    height: .3rem;
+    margin: 0 0 0 1rem;
+}
+
+
 .tags-container{
     display: flex;
     flex-direction: column;
-    margin: 1rem 0 0 0;
 }
 
 .tags-body{
@@ -130,6 +160,7 @@
     resize: none;
     outline: none; 
     box-shadow: none;
+    overflow-y: hidden;
     border: .01rem solid black;
 }
 
@@ -167,6 +198,11 @@
     align-self: flex-end;
     flex-direction: row;
     margin: 0 .5rem 0 .5rem;
+}
+
+#tags-count{
+    margin: 0 0 0 3rem;
+    align-self: flex-start;
 }
 
 .max-words-hit{

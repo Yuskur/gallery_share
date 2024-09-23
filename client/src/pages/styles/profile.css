@@ -20,13 +20,12 @@
     border-radius: 50%;
     margin: 0 10rem 0 0;
     border: .01rem solid black;
+    overflow: hidden;
     cursor: pointer;
 }
 
 .profile-image{
     width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
 }
 
 /* profile description section */

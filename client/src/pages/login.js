@@ -11,6 +11,8 @@ function Login() {
     const nav = useNavigate();
     const [passwordVisible, setPasswordVisibiltiy] = useState(false);
     const [signUpClicked, setSignUpClicked] = useState(false);
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
     const togglePasswordVisibility = () => {
         setPasswordVisibiltiy(!passwordVisible);
     }
