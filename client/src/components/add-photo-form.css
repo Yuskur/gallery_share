@@ -48,6 +48,10 @@
     border: .01rem solid black;
 }
 
+.photo-filename{
+    max-width: 17rem;    
+}
+
 .preview-photo-container {
     display: flex;
     flex-direction: row;
