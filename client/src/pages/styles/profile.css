@@ -15,8 +15,10 @@
 }
 
 .profile-image-container{
-    width: 10rem;
-    height: 10rem;
+    min-width: 10rem;
+    max-width: 10rem;
+    min-height: 10rem;
+    max-height: 10rem;
     border-radius: 50%;
     margin: 0 10rem 0 0;
     border: .01rem solid black;
@@ -28,11 +30,13 @@
     width: 10rem;
 }
 
-/* profile description section */
+/* profile description section*/
 .profile-description{
     display: flex;
     flex-direction: column;
+    min-width: 40rem;
     width: 40rem;
+    min-height: 10rem;
     height: 10rem;
     padding: 1rem;
     border: .01rem solid black;
