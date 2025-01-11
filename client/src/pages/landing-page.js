@@ -3,10 +3,15 @@ import Nav from 'react-bootstrap/Nav';
 import { Link , useLocation} from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import SearchBar from "../components/search-bar";
-import './styles/landing-page.css'
+import './styles/landing-page.css';
+import { useAuthContext } from "../hooks/useAuthContext";
 
 function Landing() {
     const location = useLocation();
+
+    const {state} = useAuthContext();
+
+    console.log(state);
 
     return(
         <div className="landingPage-body">

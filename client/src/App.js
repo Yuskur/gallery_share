@@ -9,9 +9,13 @@ import PostEdit from './pages/post-edit';
 import Login from './pages/login';
 import Topbar from './components/topbar';
 import Landing from './pages/landing-page';
+import { useState } from 'react';
 
 
 function AppWraper() {
+
+  const [signedIn, setSignedIn] = useState(false);
+
   return (
     <div className='app'>
       <div className='topbar'>
@@ -19,7 +23,7 @@ function AppWraper() {
       </div>
       <div className='content'>
         <Routes>
-          <Route path='/' element={<Profile/>}/>
+          <Route path='/' element={<Landing/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/profile' element={<Profile />}/>
           <Route path='/login' element={<Login />}/>
